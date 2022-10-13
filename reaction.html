@@ -28,6 +28,9 @@
 
 <script>
     var myTime = Date.now()
+    let min = 2
+    let max = 11
+    let result = Math.floor(Math.random()*(max-min))+min;
 
     function recordReact() {
         myTime = Date.now()
@@ -47,7 +50,7 @@
                         let buttonTime = Date.now()
                         document.getElementById("target").innerHTML = "Time was " + (buttonTime - myTime)
                     }
-                }, 3000);
+                },3000);
             }
         </script>
 </body>
